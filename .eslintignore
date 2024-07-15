@@ -1,0 +1,7 @@
+/dist-server
+/dist-client
+.eslintrc.js
+pm2.config.js
+/public
+/node_modules
+/test
