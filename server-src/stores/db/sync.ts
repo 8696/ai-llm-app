@@ -1,7 +1,7 @@
 
 import { SyncOptions } from 'sequelize'
 
-import { UserDbModel } from './model'
+import { UserDbModel, OrderModel, ProductModel, RatingModel } from './model'
 
 export default {
   async sync() {
@@ -9,5 +9,8 @@ export default {
       alter: true
     }
     await UserDbModel.sync(syncOptions)
+    await OrderModel.sync(syncOptions)
+    await ProductModel.sync(syncOptions)
+    await RatingModel.sync(syncOptions)
   }
 }

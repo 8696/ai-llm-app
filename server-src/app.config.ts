@@ -23,9 +23,21 @@ dotenv.config({
 /**
  * @description ENV config
  * */
-const ENV_CONFIG: {
-  SERVER_PORT: number
-} = process.env as any
+const ENV_CONFIG: any = process.env as any
+
+
+/**
+ * @description 数据库配置
+ * */
+
+export const DATABASE = {
+  host: ENV_CONFIG.DATABASE_HOST,
+  port: +ENV_CONFIG.DATABASE_PORT,
+  database: ENV_CONFIG.DATABASE_DATABASE,
+  username: ENV_CONFIG.DATABASE_USERNAME,
+  password: ENV_CONFIG.DATABASE_PASSWORD
+}
+
 
 /**
  * @description 端口

@@ -2,6 +2,7 @@ import { HttpError } from 'routing-controllers'
 
 export * from './aync.util'
 export * from './validator.util'
+export * from './mock.util'
 export * from './cmd-prompt.util'
 
 export const sleep = async (t = 0): Promise<void> => {
